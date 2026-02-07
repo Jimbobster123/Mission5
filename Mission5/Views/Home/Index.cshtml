@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Making Italian Food";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-5 fw-bold mb-3">Welcome to My Italian Kitchen</h1>
+    <p class="lead">A simple site about my hobby: making Italian food.</p>
+</div>
+
+<hr />
+
+<div class="row g-4 align-items-center">
+    <div class="col-md-6">
+        <img src="~/images/hobby1.jpg" class="img-fluid rounded shadow" alt="Fresh Italian ingredients or cooking" />
+    </div>
+    <div class="col-md-6">
+        <img src="~/images/hobby2.jpg" class="img-fluid rounded shadow" alt="Finished Italian dish" />
+    </div>
+</div>
+
+<div class="mt-4">
+    <h2 class="h4">Why I love making Italian food</h2>
+
+    <p>
+        I love making Italian food because it’s hands-on and rewarding. A few simple ingredients can turn into
+        something that feels special, especially when you take your time and do it the right way.
+    </p>
+
+    <p>
+        I enjoy learning the small details that make a big difference—how to salt pasta water, when to add garlic,
+        how to build a sauce, and how to balance flavors. It’s a hobby where you can always improve.
+    </p>
+
+    <p>
+        The best part is sharing it. Cooking for people (or with people) turns a normal night into something memorable.
+        And honestly… leftovers are a win too.
+    </p>
+
+    <a class="btn btn-primary mt-2" asp-controller="Home" asp-action="Calculator">
+        Go to Tutoring Calculator
+    </a>
 </div>
