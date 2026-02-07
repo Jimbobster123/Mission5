@@ -2,10 +2,11 @@
     ViewData["Title"] = "Tutoring Calculator";
     var rate = (int)ViewData["Rate"];
 }
-
+@* This is the title*@
 <h1 class="display-6 fw-bold mb-3">Tutoring Cost Calculator</h1>
 <p class="text-muted">Enter the hours you want, then calculate the total.</p>
 
+@* This is the form where you enter your infomration and you can only enter positive numebrs*@
 <div class="row">
     <div class="col-md-6">
 
@@ -36,6 +37,7 @@
     </div>
 </div>
 
+@* Pass the hourly rate from the server to JavaScript *@
 @section Scripts {
     <script>
         const hourlyRate = @rate;

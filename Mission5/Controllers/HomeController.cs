@@ -21,10 +21,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    
+
+    // Displays the tutoring calculator page
+    // Passes the hourly tutoring rate to the view for use in JavaScript
     public IActionResult Calculator()
     {
-        ViewData["Rate"] = 30; // <-- change this to your hourly rate
+        ViewData["Rate"] = 30; // Hourly tutoring rate 
         return View();
     }
 
